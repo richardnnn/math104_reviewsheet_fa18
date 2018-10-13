@@ -1,5 +1,30 @@
 ## Check List For Math104
 
+- __DEF__: 
+
+  - operation
+  - field
+    - 9 axioms ($4 +  4 + 1$)
+  - ordered field
+    - 6 properties
+
+- prove: 1>0
+
+- __DEF__: completeness of ordered field
+
+  - $(\mathbb{Q}, +, \cdot, >)$ is not complete
+
+- __Def__: bounded, bounded above, bounded below
+
+- __DEF__: $Sup_A$
+
+- __Consequences of completeness of $(\real, +, \cdot, >)$__
+
+  - Archimedian property (zoom in & out)
+  - Existence of integer part of every real & proof
+  - __proof__: Denseness of $\mathbb{Q}$
+  - __proof__: Denseness of $\real \setminus \mathbb{Q}$  
+
 - __Triangular inequality__
 
   - with its two corollaries
@@ -19,11 +44,10 @@
 - **Def**: 
 
   - __neighborhood__ of $a$ for $a \in \real$
-  - $(a_n)_n \rightarrow a, a \in \real$     (2 ways) 
+  - __Sequnce__
+  - $(a_n)_n \rightarrow a, a \in \mathbb{R}$     (2 ways) 
 
 - __Proof__: Uniqueness of limits
-
-- __Def__: bdd, bdd above, bdd, below
 
 - __Every convergent Sequence is bdd & proof__ 
 
@@ -48,9 +72,11 @@
     - & proof 
     - ($-a \cdot b_n + a \cdot b_n$) 
 
+  - $k \in \mathbb{N}, a_n \to a \implies a_n^{k} \to a^k$
+
   - $b_n \neq 0, b_n \to b \implies \frac{1}{b_n} \to \frac{1}{b}$
 
-    - & proof
+    - & proof (*note: hard)
 
   - $(a_n)_n \geq 0, k \geq 0, a_n \to a \implies \sqrt[k]{a_n} \to \sqrt[k]{a}$
 
@@ -96,28 +122,72 @@
 
   __$(b_{k_n})_n \to b \in \real \implies b_n \to b$ __
 
+  - & proof
+
 - __DEF__: 
 
   - topology
-
   - open / closed set
-
   - neighborhood
-
   - basis
-
   - metric  (distance)
-
     - 3 properties
     - prove the triangular eqaulity in $d_p$
     - Minkowski's inequality
-
   - topology induced by a metric $T_d$  ($\{ \empty$, union of ... $\}$)  
-
     - characterisation
-
     - open ball  / open set w.r.t $d$ 
-
     - __proof__: finite intersections of sets in $T_d$ are also in $T_d$ 
-
     - closed ball / closed set
+    - discrete topology (all subsets are open and closed)
+
+- Properties of unions and intersections:
+
+  - __finite intersections__ of __open__ sets (def)
+
+  - __arbitrary unions__ of __open__ sets (def)
+
+    $\implies$(due to de morgan's law) 
+
+  - __finite unions__ of __closed__ sets
+
+  - __arbitrary intersections__ of __closed__ set 
+
+    $\implies$
+
+  - all __finite__ sets are __closed__
+
+- __DEF__: closure
+
+- $\overline{F} = F \iff$ F closed
+
+- __DEF__: normded space ($X, ||\cdot||$)
+
+- Restrictions of normed space
+
+  - $X$ must be vector space 
+  - translation invariant
+  - $d_{||\cdot||}$ takes all non-negative values in $\real$
+    - a result of $\lambda$ multiplication 
+
+- __DEF__: 
+
+  - Sequence in a metric space
+  - $(x_n)_n \to x_0 \in X$,  w.r.t d  (3 ways)
+
+- 3 properties for convergent Sequence (say, $\to x_o$)in metric spaces
+
+  - unique limit
+  - every subsequence converge
+  - bounded w.r.t d(meaning ..?) 
+
+- Extra 3 properties in normed spaces (normed space gives us addition, zero, etc.)
+
+- __DEF__: characterisation of closures via sequences
+
+- 2 techniques to prove $F \subset X$ is closed / not closed 
+
+####_MIDTERM ENDS HERE_ 
+
+----
+
