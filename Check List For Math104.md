@@ -124,6 +124,10 @@
 
   - & proof
 
+---
+
+#####11. Metric Space
+
 - __DEF__: 
 
   - topology
@@ -134,12 +138,22 @@
     - 3 properties
     - prove the triangular eqaulity in $d_p$
     - Minkowski's inequality
-  - topology induced by a metric $T_d$  ($\{ \empty$, union of ... $\}$)  
-    - characterisation
-    - open ball  / open set w.r.t $d$ 
-    - __proof__: finite intersections of sets in $T_d$ are also in $T_d$ 
-    - closed ball / closed set
-    - discrete topology (all subsets are open and closed)
+
+---
+
+##### 12. Topology Induced by a Metric
+
+- topology induced by a metric $T_d$  ($\{ \empty$, union of ... $\}$)  
+
+- characterisation
+- open ball  / open set w.r.t $d$ 
+- __proof__: finite intersections of sets in $T_d$ are also in $T_d$ 
+- closed ball / closed set
+- discrete topology (all subsets are open and closed)
+
+---
+
+#####13. Open Sets and Closed Sets
 
 - Properties of unions and intersections:
 
@@ -157,12 +171,26 @@
 
   - all __finite__ sets are __closed__
 
+---
+
+#####14. Closure
+
 - __DEF__: closure
-
 - $\overline{F} = F \iff$ F closed
+- proof: $\overline{F}$ is closed (w.r.t d)
+- $\overline{F}$ is the smallest closed set containing F
+  - proof 
 
-- __DEF__: normded space ($X, ||\cdot||$)
+---
 
+#####15. Normed Space
+
+- __DEF__: norm($||\cdot||$)
+  - nonnegativity
+  - sacalar multiplication
+  - triangle inequality
+- $||\cdot||_p$ for $p \geq 1$, Minkawski's Inequality
+- __def__: memtric induced by norm
 - Restrictions of normed space
 
   - $X$ must be vector space 
@@ -170,24 +198,73 @@
   - $d_{||\cdot||}$ takes all non-negative values in $\real$
     - a result of $\lambda$ multiplication 
 
-- __DEF__: 
+---
+
+#####16. Sequence in Metric Space
+
+- __def__: 
 
   - Sequence in a metric space
-  - $(x_n)_n \to x_0 \in X$,  w.r.t d  (3 ways)
-
+  - Convergence: $(x_n)_n \to x_0 \in X$,  w.r.t d  (3 ways)
 - 3 properties for convergent Sequence (say, $\to x_o$)in metric spaces
-
   - unique limit
   - every subsequence converge
   - bounded w.r.t d(meaning ..?) 
-
 - Extra 3 properties in normed spaces (normed space gives us addition, zero, etc.)
-
 - __DEF__: characterisation of closures via sequences
-
 - 2 techniques to prove $F \subset X$ is closed / not closed 
 
 ####_MIDTERM ENDS HERE_ 
 
 ----
 
+
+
+
+
+
+
+36. Riemann Integration
+
+- $X_I$characteristic function
+
+- $\int X_I :=$ length of $I$ 
+
+- __def__: step function $\phi$
+
+  - equivalence: $\phi(x) = \sum c_i X_{(x_{i-1, } x_i)}$
+
+  - observation:
+
+    - bounded support
+    - continuity
+
+  - $\int\phi$
+
+  - observation: adding subset $\{y_0, y_1, ... y_m\}$ to $\{x_o, x_1, .. x_n\}$ of $\phi$ 
+
+  - Linearity of integral for step function
+
+  - $\phi(x) \geq \phi(x), \forall x \in \R $
+
+    $\iff  \int \phi \geq \int \psi$ 
+
+- __def__: Riemann Integrable (R.I.)
+
+  - prop: step functions are R.I.
+  - 2 properties of R.I $f$:
+    - f bounded
+    - f has bounded support 
+  - Theorem: R.I. $f$  with  bounded support $\iff$
+  - $\int f$
+
+
+
+37. R.I. Proof & Corollary
+
+- 2 criterions 
+
+- 2 corollary
+- 4 basic properties
+- Thm: Any monotone function $f: [a, b] \to \R$ is Riemann Integrable.  
+- Thm: Any continuous function $f: [a, b] \to \R$ is Riemann Integrable.  
