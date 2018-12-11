@@ -211,14 +211,24 @@
   - every subsequence converge
   - bounded w.r.t d(meaning ..?) 
 - Extra 3 properties in normed spaces (normed space gives us addition, zero, etc.)
-- __DEF__: characterisation of closures via sequences
+- __DEF__: characterisation of closures / closed sets via sequences 
 - 2 techniques to prove $F \subset X$ is closed / not closed 
 
 ####_MIDTERM ENDS HERE_ 
 
 ----
 
+##### 17. Accumulation Points
 
+- __Def__: accumulation point
+- __Proof__: $\overline{A}  = A \cup A'$ ,wher $A' :=$ accumulation points of A,
+  - prove: $A \cup A' \sub \overline{A}$
+  - prove: $\overline{A} \sub A \cup A'$
+- ex: $\overline{(a, b) \cup \{c\}} = ((a, b) \cup \{c\}) \cup ((a, b) \cup \{c\})' = (a, b) \cup \{\} \cup [a, b] = [a b] \cup \{c\}$
+
+---
+
+##### 18. Cauchy Sequences In Metric Space
 
 
 
