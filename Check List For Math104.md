@@ -230,17 +230,185 @@
 
 ##### 18. Cauchy Sequences In Metric Space
 
+- __Def__: Cauchy sequence in metric space
+- cauchy and convergence
+  - the key is to note the difference: cauchy only concerns $d$ and all the elements in the squence, while convergence will also need one extra point: the limit. i.e. we need to think about the ambient space
+-  __Def__: Complete metric space (now we include the extra point)
+- __proof__: Complete $\implies$ closed
 
+---
 
+##### 19. Limits of Functions
 
+- __Def__: accumulation point $x_0$ of $A$, for $x_0 \in \R, A \subset \R$  
+  - 3 ways
+- __Def__: $x_0$ isolated point of A, for $A \sub R, x_0 \in A$
+- __Def__: $\lim_{x \to x_0} f(x) = l$, for $f: A \to \R$, and $ x_0$ a.c point of $A$. 
+  - 3 ways
+- $+\infty, -\infty$ as limits
+- $+\infty, -\infty$ as A.C. points
 
-36. Riemann Integration
+---
+
+##### 20. Characterisation of Accumulation Points
+
+- The following three are equivalent
+  - $x_0$is an A.C points of A
+  - Every neighbourhood of $x_0$ contains infinitely many elements of A, different from $x_0$
+  - there exits a sequence $(x_n)_{n \in \N} $in $A$, all of whose terms are pairwise distinct, such that $x_n \to x_0$ 
+
+---
+
+##### 21. Characterisation of Limits via Limits of Sequences
+
+- $\lim_{x \to x_0} f(x) = l$  vs  $f(x_n) \to l $, when $x_n \to x_0$ 
+- Corollary: Algebra of limits
+
+---
+
+##### 22. Continuity
+
+- __Def__: $f$ is continuous at $x_0$
+  - 3 ways
+  - Compare to limits, we now really care about $f(x_0)$
+  - consider $x_0$ to be an isolated point 
+
+- Proof continuity
+  - by $\epsilon$ definiton 
+  - by limit of sequence (i.e. when not an isolation point) 
+
+- __Def__: Continuity via limits of Sequence
+- __Thm__: Continuity of algebra of functions ($f + g, \lambda \cdot f, f \cdot g, \frac{f}{g}$)
+- __Thm__: Composition of functions, $g \circ f$, peserves  continuity
+
+---
+
+##### 23. Continuity as a Local Property
+
+- Continuity is a local property
+- if $f$ is cont. at $x_0$, then $f$ is bounded in a neighbourhood of $x_0$
+- Local preservation of sign and points of continuity
+
+---
+
+##### 25. Continuous functions on closed intervals
+
+- Every continuous function $f:[a, b] \to \R$ is bounded.
+- (Stronger) Every continuous function $f:[a, b] \to \R$ has a maximal value and minimal value.
+
+---
+
+#####26. IVT
+
+- IVT
+  - __Def__: IVT
+  - __proof__: IVT
+    - 2 ways
+  - 3 other forms
+
+---
+
+#####27. Applications of IVT
+
+- Every positive number has a unique n-th root
+
+- Each polynomial of odd degree has a root  in $\R$
+
+- Fix point theorem
+
+- __Def__: Interval
+
+- Continuous images of intervals are intervals
+
+- Continuous on $I$  +  1 to 1 $\implies$ strictly monotone
+
+- $f: I \to \R$ continuous and 1-1
+
+  $\implies$ $f^{-1}: f(I) \to I$  is continuous, and has the same kind of monotonicity
+
+---
+
+##### 28. Continuous functions on metric spaces
+
+- __Def__: Let ($X, d_x$),  ($Y, d_y$) be metric spaces, let $f: X \to Y$, $f$ is continuous at $x_0 \in X$
+  - 2 ways
+
+- __Def__: $f^{-1}(A), A \sub Y$
+  - $f^{-1}(A)$ is well defined $\forall  A \sub Y$,whether the function $f^{-1}: Y \to X$ is well defined or not  
+  - $B \sub f^{-1}(A) \iff f(B) \sub A$
+- $f$ continuous  $\iff$$f$ inverts open sets to open sets (i.e. $f^{-1}(U)$ open in ($X, d_x$), for every $U \sub Y,$ open in $(Y, d_y)$) .
+  - proof
+
+---
+
+##### 29. Compact Sets
+
+- __Def__: open cover of $K$, $K \sub X$ in  $(X, d)$
+  - __Def__: subcover $A' \sub A$
+- __Def__: $(X, d)$compact
+  - __Def__: compact subset
+-  $K \sub X, K$ compact $\implies$ $K$ closed and bounded in $(X, d)$
+  - the converse is not always true
+  - proof
+- Thm: Continuous Functions send compact sets to compact sets.
+
+---
+
+##### 30. Sequentially Compactness
+
+- __Def__: $(X, d)$ Sequentially compact
+- Sequentially compact $\implies$closed
+  - not closed $\implies$not sequentially compact
+
+---
+
+##### 31. Differentiability
+
+- __Def__: $f$ dfferentiable at $x_0$
+  - __def__: derivative of $f$ at $x_0$  
+- __Proof__: differentiable $\implies$continuous
+- Rules of differentiation
+  - 4 
+- __Proof__: Chain rule
+
+---
+
+##### 32. Local Extrema
+
+- Thm: $f \uparrow$  $\implies f'(x) \geq 0, \forall x \in (a, b) $; .....
+  - $f'(x)$ can be zero even strictly  increasing, consider $x^3, x= 0 $
+    - however, $f'(x) > 0 \implies f$ strictly increasing...
+- __def__: local extremum
+- Fermat's Prop: local extremum at $x_0$  and  $f'(x_0)$ exists $\implies f'(x_0) = 0$
+- __def__: critical point
+
+---
+
+##### 33. Rolle's, MVT, L' Hopital
+
+- Rolle's Theorem
+  - proof
+- Mean Value Theorem
+  - proof
+- L ' Hopistal
+  - __Def__: Cauchy's Generalised Mean Value Theorem 
+
+---
+
+##### 34. Uniform Continuity
+
+- __Def__: Uniform Continuity
+- $f: (X, d_x) \to (Y, d_y)$ continuous, $(X, d_x)$ compact $\implies f$ uniformly continuous
+
+---
+
+#####35. Riemann Integration
 
 - $X_I$characteristic function
 
 - $\int X_I :=$ length of $I$ 
 
-- __def__: step function $\phi$
+- __Def__: step function $\phi$
 
   - equivalence: $\phi(x) = \sum c_i X_{(x_{i-1, } x_i)}$
 
@@ -266,11 +434,11 @@
     - f bounded
     - f has bounded support 
   - Theorem: R.I. $f$  with  bounded support $\iff$
-  - $\int f$
+  - $\int f​$
 
+---
 
-
-37. R.I. Proof & Corollary
+#####36. R.I. Proof & Corollary
 
 - 2 criterions 
 
